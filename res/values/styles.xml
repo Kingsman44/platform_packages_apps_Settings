@@ -805,4 +805,14 @@
         <item name="android:paddingTop">4dp</item>
     </style>
 
+    <style name="CardView.Dark">
+        <item name="cardBackgroundColor">@android:color/transparent</item>
+    </style>
+    <style name="CardView.Light">
+        <item name="cardBackgroundColor">@android:color/transparent</item>
+    </style>
+
+    <style name="CardView">
+        <item name="cardBackgroundColor">@android:color/transparent</item>
+    </style>
 </resources>
