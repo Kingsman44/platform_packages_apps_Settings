@@ -38,6 +38,13 @@
         settings:searchable="false"
         settings:controller="com.android.settings.deviceinfo.firmwareversion.FirmwareVersionDetailPreferenceController"/>
 
+    <!-- Octavi build type -->
+    <Preference
+        android:key="build_type"
+        android:title="@string/build_type"
+        settings:enableCopying="true"
+        settings:controller="com.android.settings.deviceinfo.firmwareversion.OctaviBuildTypePreferenceController"/>
+
     <!-- Security patch -->
     <Preference
         android:key="security_key"

@@ -15,4 +15,9 @@
     <!-- Octavi Stage in About phone -->
     <string name="octavi_stage_title">Octavi stage</string>
 
+    <!-- Build types, now with translations -->
+    <string name="build_type">Build Type</string>
+    <string name="octavi_official">Official</string>
+    <string name="octavi_unofficial">Unofficial</string>
+
 </resources>
