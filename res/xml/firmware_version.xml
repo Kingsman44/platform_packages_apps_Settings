@@ -21,6 +21,13 @@
     android:title="@string/firmware_version"
     settings:keywords="@string/keywords_android_version">
 
+    <!-- Device Model-->
+    <Preference
+        android:key="octavi_device_model"
+        android:title="@string/octavi_device_model"
+        settings:enableCopying="true"
+        settings:controller="com.android.settings.deviceinfo.firmwareversion.OctaviModelPreferenceController"/>
+
     <!-- ROM Version -->
     <Preference
         android:key="modversion"

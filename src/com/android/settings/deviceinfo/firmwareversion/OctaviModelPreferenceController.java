@@ -1,5 +1,5 @@
 /*
- * Copyright (C) 2017 The halogenOS Project
+ * Copyright (C) 2017 The Android Open Source Project
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -17,29 +17,28 @@ package com.android.settings.deviceinfo.firmwareversion;
 
 import android.content.Context;
 import android.os.SystemProperties;
-import android.text.TextUtils;
+import androidx.annotation.VisibleForTesting;
 
 import com.android.settings.R;
 import com.android.settings.core.BasePreferenceController;
 
-public class OctaviStagePreferenceController extends BasePreferenceController {
+public class OctaviModelPreferenceController extends BasePreferenceController {
 
-    private static final String PROPERTY_OCTAVI_VERSION = "ro.octavi.status";
+    @VisibleForTesting
+    private static final String OCTAVI_DEVICE_MODEL = "ro.product.system.model";
 
-    public OctaviStagePreferenceController(Context context, String key) {
-        super(context, key);
+    public OctaviModelPreferenceController(Context context, String preferenceKey) {
+        super(context, preferenceKey);
     }
 
     @Override
     public int getAvailabilityStatus() {
-        if (!TextUtils.isEmpty(SystemProperties.get(PROPERTY_OCTAVI_VERSION))) return AVAILABLE;
-        return CONDITIONALLY_UNAVAILABLE;
+        return AVAILABLE;
     }
 
     @Override
     public CharSequence getSummary() {
-        return SystemProperties.get(PROPERTY_OCTAVI_VERSION,
-                mContext.getString(R.string.unknown));
+        return SystemProperties.get(OCTAVI_DEVICE_MODEL,
+                mContext.getString(R.string.device_info_default));
     }
 }
-

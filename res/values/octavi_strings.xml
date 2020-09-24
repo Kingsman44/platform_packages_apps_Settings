@@ -13,12 +13,15 @@
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
 
     <!-- Octavi Stage in About phone -->
-    <string name="octavi_stage_title">Octavi stage</string>
+    <string name="octavi_stage_title">OctaviOS stage</string>
 
     <!-- Build types, now with translations -->
     <string name="build_type">Build Type</string>
     <string name="octavi_official">Official</string>
     <string name="octavi_unofficial">Unofficial</string>
+
+    <!-- Device Model -->
+    <string name="octavi_device_model">Device Model</string>
 
     <!-- Fingerprint location message - default -->
     <string name="security_settings_fingerprint_enroll_find_sensor_message_front" product="default">Locate the fingerprint sensor on the front of your phone.</string>
