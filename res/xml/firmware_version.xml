@@ -28,6 +28,14 @@
         settings:enableCopying="true"
         settings:controller="com.android.settings.deviceinfo.firmwareversion.OctaviModelPreferenceController"/>
 
+    <!-- Phone Specs -->
+    <Preference
+        android:key="phone_specs"
+        android:title="@string/specs_title"
+        android:summary="@string/summary_placeholder"
+        settings:enableCopying="true"
+        settings:controller="com.android.settings.deviceinfo.firmwareversion.SpecsPreferenceController"/>
+
     <!-- ROM Version -->
     <Preference
         android:key="modversion"
