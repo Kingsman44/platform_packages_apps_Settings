@@ -13,7 +13,7 @@
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
 
     <!-- Octavi Stage in About phone -->
-    <string name="octavi_stage_title">OctaviOS stage</string>
+    <string name="octavi_stage_title">OctaviOS Stage</string>
 
     <!-- Build types, now with translations -->
     <string name="build_type">Build Type</string>

@@ -42,6 +42,8 @@ public class OctaviBuildTypePreferenceController  extends BasePreferenceControll
         switch (buildType) {
             case "Official":
                 return mContext.getString(R.string.octavi_official, buildType);
+            case "OFFICIAL":
+                return mContext.getString(R.string.octavi_official, buildType);
             default:
                 return mContext.getString(R.string.octavi_unofficial);
         }
