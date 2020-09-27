@@ -51,4 +51,8 @@
     <!-- Manage applications, package string displayed in app snippet -->
     <string name="packagename_text"><xliff:g id="package_name">%1$s</xliff:g></string>
 
+    <!-- Octavi Lab -->
+    <string name="octavi_lab_dash_title">Octavi Lab</string>
+    <string name="octavi_lab_summary">Customization Laboratory</string>
+
 </resources>
