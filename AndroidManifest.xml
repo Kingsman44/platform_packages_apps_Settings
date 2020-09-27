@@ -3405,6 +3405,19 @@
                        android:value="com.android.settings.sound.MediaControlsSettings" />
         </activity>
 
+        <!-- OctaviLab -->
+        <activity android:name=".Settings$OctaviLabActivity"
+            android:label="@string/octavi_lab_dash_title"
+            android:icon="@drawable/ic_homepage_octavi"
+            android:parentActivityName="com.android.settings">
+            <intent-filter android:priority="69">
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="com.android.settings.SHORTCUT" />
+            </intent-filter>
+            <meta-data android:name="com.android.settings.FRAGMENT_CLASS"
+                android:value="com.octavi.lab.OctaviLab" />
+        </activity>
+
         <!-- This is the longest AndroidManifest.xml ever. -->
     </application>
 </manifest>
