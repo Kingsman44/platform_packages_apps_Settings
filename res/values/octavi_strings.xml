@@ -55,4 +55,7 @@
     <string name="octavi_lab_dash_title">Octavi Lab</string>
     <string name="octavi_lab_summary">Customization Laboratory</string>
 
+    <!-- Battery temp -->
+    <string name="battery_temp_title">Battery temperature</string>
+
 </resources>
